@@ -1,0 +1,84 @@
+body{
+    margin: 0;
+}
+#wrapper{
+    background: radial-gradient(rgb(157, 71, 179),rgb(67, 1, 83),rgb(35, 1, 49));
+    width: 1070px;
+    height: auto;
+}
+.header{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: rgb(233, 233, 233);
+    justify-content: space-between;
+    height: 60px;
+}
+#photo{
+    margin: 15px;
+    padding: 10px;
+    background-color: rgb(184, 199, 214);
+    display: inline-block;
+}
+.contents{
+    background: linear-gradient(to right,whitesmoke,gray);
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    padding: 0px;
+    height: 660px;
+    width: 333px;
+}
+.contents#about{
+    font-size: 120%;
+    margin: 15px;
+    padding: 0px;
+    width: 530px;
+    height: 324px;
+}
+p.subheader{
+    font-weight: bold;
+    margin: 0px;
+    font-size: 150%;
+    height: 30px;
+    padding: 10px;
+    background: linear-gradient(silver,rgb(126, 125, 125),silver);
+    color: white;
+}
+p{
+    margin: 10px;
+}
+
+#footer{
+    text-align: center;
+    display: block;
+    height: 90px;
+    width: auto;
+    background-color: lightgray;
+}
+.greenbutton{
+    box-shadow: 5px 5px 2px grey;
+    padding: 5px;
+    margin: 10px 100px;
+    background-color: darkgreen;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: inline-block;
+    color: whitesmoke;
+}
+.techbutton{
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    margin: 6px;
+}
+.socialbutton{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    margin: 6px;
+    vertical-align: middle;
+}
+a{
+    font-style: italic;
+}

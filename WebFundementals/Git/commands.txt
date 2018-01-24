@@ -1,0 +1,11 @@
+cd..
+cd/
+dir
+cd Desktop
+mkdir test
+copy NUL index.html
+copy index.html index_2.html
+del styles.css
+rd destination
+commands.txt
+/history

@@ -1,0 +1,26 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments>dir /b /s
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\iOS
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\MEAN
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\netCore
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Phyton
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Ruby
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\iOS\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\MEAN\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\netCore\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Phyton\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Ruby\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\CSS
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\Git
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\HTML
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\Javascript
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\CSS\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\Git\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\Git\commands.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\HTML\about.txt
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\HTML\Fake Blog.html
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\HTML\Indentation.html
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\HTML\LoremIpsum.png
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\HTML\Registration Form.html
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\Web Fundementals\Javascript\about.txt

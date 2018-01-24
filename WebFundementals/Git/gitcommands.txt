@@ -1,0 +1,21 @@
+cd Desktop
+mkdir gittest
+cd gittest
+git init
+copy NUL index.html
+copy NUL style.css
+copy NUL aboutMe.txt
+git add .
+git commit -m "initial commit"
+aboutMe.txt
+git add .
+git commit -m "updated aboutMe.txt"
+git log
+aboutMe.txt
+git add .
+git commit -m "added Favorite Movie to aboutMe.txt"
+git revert -n HEAD
+aboutMe.txt
+git add .
+git commit -m "changed movie to book in aboutMe.txt"
+git log

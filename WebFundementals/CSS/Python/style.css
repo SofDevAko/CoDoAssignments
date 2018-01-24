@@ -1,0 +1,18 @@
+#wrapper{
+    background-color: darkblue;
+}
+#search{
+    padding: 30px;
+}
+#searcharea{
+    background-color: grey;
+    display: inline-block;
+}
+.sizebutton{
+    color: yellow;
+    text-decoration: underline;
+}
+#textsize{
+    display: inline-block;
+    color: white;
+}
