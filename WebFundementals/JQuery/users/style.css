@@ -1,0 +1,31 @@
+thead {
+    padding: 5px;
+    border: 1px solid black;
+}
+th {
+    padding-right: 20px;
+    font-weight: bold;
+
+}
+button {
+    margin: 40px;
+    display: block;
+}
+#form {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    align-content: right;
+}
+#form h1 {
+    display: block;
+    border-bottom: 1px solid black;
+}
+#form p{
+    margin-right: 1px;
+    display: inline-block;
+}
+#form input{
+    margin-right: 1px;
+    display: inline-block;
+}

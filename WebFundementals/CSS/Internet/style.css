@@ -1,0 +1,172 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --------------RESET--------------- */
+#wrapper{
+    font-size: 70%;
+    margin: 10px;
+    background-color: white;
+    width: 970px;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+#header img{
+    height: 120px;
+    width: 120px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+#header h1{
+    padding: 25px;
+    margin-left: 90px;
+    font-size: 350%;
+    color: black;
+    background-color: white;
+    display: block;
+}
+#header span{
+    color: rgb(60, 125, 168);
+}
+#header h2{
+    padding: 15px;
+    font-size: 250%;
+    color: white;
+    display: block;
+    background: linear-gradient(rgb(60, 125, 168),rgb(103, 169, 212),rgb(60, 125, 168));
+}
+#main{
+    width: 970px;
+    display: inline-block;
+    background: linear-gradient(rgb(245, 243, 243),whitesmoke,white);
+}
+#left{
+    display: inline-block;
+    width: 270px;
+}
+#topleft{
+    vertical-align: top;
+    width: 270px;
+    height: 270px;
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+#topleft h4{
+    margin: 10px;
+    color: black;
+    font-size: 200%
+}
+#topleft h4 span{
+    color: brown;
+}
+#topleft h5{
+    margin: 5px;
+    margin-bottom: 50px;
+    font-size: 180%
+}
+#topleft h5 span{
+    color: rgb(60, 125, 168);
+}
+#topleft a{
+    font-size: 180%;
+    text-align: center;
+    width: 200px;
+    background-color: rgb(60, 125, 168);
+    color: white;
+    align-content: center;
+    margin: 3px 0px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 1px gray;
+}
+#orange{
+    background-color: orange;
+}
+#ad{
+    width: 250px;
+    display: inline-block;
+    margin: 30px 3px;
+}
+img#bg{
+    width: 250px;
+    height: 320px;
+    display: inline-block;
+}
+img#ninja{
+    width: 139;
+    height: 192;
+    display: inline-block;
+}
+#content{
+    vertical-align: top;
+    margin: 5px;
+    height: 670px;
+    width: 650px;
+    display: inline-block;
+}
+#contentheader{
+    width: 650px;
+    height: 60px;
+}
+#lefthead img{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+#righthead img{
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+}
+#contentmain img{
+    width: 356px;
+    height: 116px;
+}
+#content #bottom img{
+    width: 96px;
+    height: 82px;
+}

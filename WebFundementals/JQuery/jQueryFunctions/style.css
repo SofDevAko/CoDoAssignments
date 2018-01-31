@@ -1,0 +1,17 @@
+.part{
+    display: block;
+    border: 3px solid black;
+    text-align: center;
+}
+p {
+    background-color: orangered;
+}
+#click p{
+    font-size: 60%;
+}
+#slidedown p{
+    display: none;
+}
+#fadein p{
+    display: none;
+}

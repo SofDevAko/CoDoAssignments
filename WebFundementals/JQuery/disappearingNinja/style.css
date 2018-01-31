@@ -1,0 +1,13 @@
+img {
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 20px;
+}
+button {
+    padding: 30px;
+    margin: 0px 800px;
+    background-color: green;
+    display: inline-block;
+}
