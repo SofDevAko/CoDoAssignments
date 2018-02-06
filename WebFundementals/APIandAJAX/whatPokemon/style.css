@@ -1,0 +1,27 @@
+img {
+    height: 145px;
+    width: 145px;
+    border: 1px solid red;
+}
+#left {
+    display: inline-block;
+    width: 70%;
+}
+#right {
+    display: inline-block;
+    margin-top: 150px;
+    position: fixed;
+    width: auto;
+    background-color: red;
+}
+h1 {
+    color: black;
+}
+#pokebox{
+    margin: 20px;
+    height: auto;
+    width: 300px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+}

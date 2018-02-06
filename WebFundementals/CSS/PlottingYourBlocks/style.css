@@ -3,7 +3,7 @@
     padding: 0px;
 }
 #wrapper{
-    width: 950px;
+    width: 100%;
     background-color: silver;
     margin: 0px auto;
     padding-top: 20px;
@@ -18,7 +18,7 @@
 #navigation{
     display: inline-block;
     height: 300px;
-    width: 200px;
+    width: 15%;
     background-color: blue;
     margin: 20px;
     margin-right: 3px;
@@ -27,21 +27,49 @@
     display: inline-block;
     vertical-align: top;
     height: 400px;
-    width: 700px;
+    width: 78%;
     background-color: red;
     margin: 20px;
     margin-left: 3px;
 }
 .subcontents{
-    display: inline-block;
+    display: block;
     height: 200px;
-    width: 210px;
+    width: 25%;
     background-color: yellow;
     margin: 10px;
 }
 #advertisement{
     margin: 20px;
     height: 120px;
-    width: 660px;
+    width: auto;
     background-color: purple;
+}
+@media only screen and (max-width: 480px){
+    #navigation{
+        display: none;
+    }
+    .subcontents{
+        width: 95%;
+    }
+    #maincontent{
+        width: 100%;
+        margin: 10px;
+    }
+    #advertisement{
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 481px){
+    /* .m0{
+        display: none;
+    } */
+    .subcontents{
+        display: block;
+    }
+}
+@media only screen and (min-width: 1024px){
+    .subcontents{
+        display: block;
+    }
 }

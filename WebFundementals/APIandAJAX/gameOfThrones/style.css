@@ -1,0 +1,39 @@
+#wrapper{
+    background-color: rgb(173, 136, 79);
+    height: 970px;
+    width: auto;
+}
+img {
+    border: 2px ridge red;
+    height:300px;
+    width: 450px;
+    display: inline-block;
+    margin: 5px;
+    margin-top: 20px;
+}
+#text {
+    border: 3px ridge red;
+    color: red;
+    margin: 100px 30%;
+    height: 400px;
+    width: 600px;
+    background-color: black;
+}
+#result {
+   
+    display: block;
+    
+}
+h2 {
+    display: inline;
+    position: relative;
+    top: -15px;
+    right: -15px;
+    border: 2px ridge red;
+    background-color: black;
+    padding: 5px;
+}
+p {
+    font-size: 120%;
+    padding: 30px;
+}

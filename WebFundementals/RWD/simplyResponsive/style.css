@@ -1,0 +1,47 @@
+h1{
+    padding: 10px;
+    background-color: rgb(110, 110, 110);
+}
+p{
+    padding: 10px;
+    background-color: lightslategray;
+}
+h4 {
+
+    display: none;
+    padding: 10px;
+    background-color: yellow;
+}
+@media only screen and (max-width: 480px){
+    #sm{
+        display: block;
+    }
+    #md {
+        display: none;
+    }
+    #lg{
+        display: none;
+    }
+}
+@media only screen and (min-width: 481px){
+    #sm{
+        display: none;
+    }
+    #md {
+        display: block;
+    }
+    #lg{
+        display: none;
+    }
+}
+@media only screen and (min-width: 1024px){
+    #sm{
+        display: none;
+    }
+    #md {
+        display: none;
+    }
+    #lg{
+        display: block;
+    }
+}
