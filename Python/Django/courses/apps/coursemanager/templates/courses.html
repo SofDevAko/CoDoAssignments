@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Course Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    {% if request.session.active_username %}
+        <p>You are logged in as {{request.session.active_username}}</p>
+        <a href="/logout">Click to logout</a>    
+    {% endif %}
+    <h1>Welcome to the dojo: {{ request.session.active_username }}</h1>
+    <a href="/">Home page</a>
+
+    {% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+        <li>{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    
+    <h1>Courses</h1>
+    <form action="courses/addcourse", method="POST">
+        {% csrf_token %}
+        <h3>Add a new course:</h3>
+        Course Name: <input type="text" name="name"><br>
+        Description: <input type="text" name="description"><br>
+        <input type="submit" value="Add Course">
+    </form>
+
+    <h3>Courses</h3>
+    <table>
+        <thead>
+            <th>Course Name</th>
+            <th>Description</th>
+            <th>Created By</th>
+            <th>Date Added</th>
+            <th>Actions</th>
+        </thead>
+        <tbody>
+            {% for course in courses %}
+                <tr>
+                    <td>{{ course.name }}</td>
+                    <td>{{ course.description }}</td>
+                    <td>{{ course.created_by }}</td>
+                    <td>{{ course.created_at }}</td>
+                    <td><a href="courses/show/{{course.id}}">Show</a><a href="courses/like/{{course.id}}">Like</a><a href="courses/destroy/{{course.id}}">Remove</a></td>
+                </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</html>

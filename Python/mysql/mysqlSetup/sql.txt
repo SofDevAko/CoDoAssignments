@@ -1,0 +1,1 @@
+SET port settings to active port and connect to it

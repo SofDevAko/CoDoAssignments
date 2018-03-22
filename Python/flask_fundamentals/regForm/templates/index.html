@@ -1,0 +1,32 @@
+<html>
+    <head>
+       <title>Form Test Index</title>
+       <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+    </head>
+    <body>
+      <h1>Index Page</h1>
+      <div>
+        <h3>Create a User</h3>
+        <form action='/process' method='post'>
+            Your E-Mail Adrress: <input type='text' name='email'>
+            Your First Name: <input type='text' name='firstname'>
+            Your Last Name: <input type='text' name='lastname'>
+            Password: <input type='text' name='password'>
+            Confirm Password: <input type='text' name='conpass'>
+            <input type='submit' value='Submit'>
+        </form>
+    </div>
+    
+        {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul>
+                {% for message in messages %}
+                    <li> {{message}}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+    
+    </body>
+</html>

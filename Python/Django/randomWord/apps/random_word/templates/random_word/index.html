@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Random Word Generator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h3>Random Word (attempt #{{request.session.count}})</h3>
+    <div>{{request.session.text}}</div>
+    <form action="/generate">
+        <input type="submit" value="Generate a random word">
+    </form>
+    <form action="/generate/reset">
+        <input type="submit" value="Reset Counter">
+    </form>
+</body>
+</html>

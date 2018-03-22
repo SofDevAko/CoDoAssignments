@@ -1,0 +1,24 @@
+div {
+    margin: 20px;
+    text-align: center;
+}
+div#wrong{
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: red;
+}
+div#correct{
+    color: white;
+    font-weight: bold;
+    border: 1px solid black;
+    background-color: green;
+}
+.hidden{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    background-color: lightgrey;
+    box-shadow: 5px 5px black;
+}

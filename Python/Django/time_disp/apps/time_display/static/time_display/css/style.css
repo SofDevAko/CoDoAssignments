@@ -1,0 +1,12 @@
+h1{
+    padding: 20px;
+    border: 1px solid black;
+    margin: 30px 500px;
+}
+div{
+    padding: 20px;
+    font-size: 150%;
+    border: 2px solid grey;
+    margin: 30px 500px;
+    background-color: greenyellow
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Friends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Friends:</h1>
+    <table>
+        <thead>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Id</th>
+        </thead>
+        <tbody>
+        {% for friend in all_friends: %}
+        <tr>
+        <td><p>{{ friend['first_name'] }}</p></td> 
+        <td><p>{{ friend['last_name'] }}</p></td> 
+        <td><p>{{ friend['id'] }}</p></td> 
+        </tr>   
+        {% endfor %}
+        </tbody>
+    </table>
+    
+    <h2>Add a Friend</h2>
+    <form action='/friends' method='POST'>
+        <label for="first_name">First Name:<input type="text" name="first_name" id="first_name"></label>
+        <label for="last_name">Last Name:<input type="text" name="last_name" id="last_name"></label>
+        <input type="submit" value="Add">
+    </form>
+
+</body>
+</html>

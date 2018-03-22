@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Great Number Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <div>
+        <h1>Welcome to my Number Game!</h1>
+        <p>I'm thinking a number between 1 and 100</p>
+        <p>Take a guess and I will guide you!</p>
+        <form action="/guess" method="POST">
+            <input type="number" name="guessnumber">
+            <input type="submit" value="Submit Guessed Value">
+        </form>
+    </div>
+    <div>
+        {% with errors = get_flashed_messages(category_filter=["error"]) %}
+            {% if errors %}
+            <div class="errormessage">
+                {% for msg in errors %}
+                    <p> {{msg}}</p>
+                {% endfor %}
+            </div>
+            {% endif %}  
+        {% endwith %}
+        {% with successes = get_flashed_messages(category_filter=["success"]) %}
+            {% if successes %}
+            <div class="correctmessage">
+                {% for msg in successes %}
+                    <p> {{msg}}</p>
+                {% endfor %}
+                <form action="/reset", method="POST">
+                    <input type="submit" value="Play Again!">
+                </form>
+            </div>
+            {% endif %}  
+        {% endwith %}
+    </div>
+</body>
+</html>

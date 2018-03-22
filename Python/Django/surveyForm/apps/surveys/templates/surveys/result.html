@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Suvey Form Results</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h2>You have submitted {{ request.session.times }}</h2>
+    <div>
+        <h1>Submitted Info:</h1>
+        <p>Name: {{ request.session.name }}</p>
+        <p>Dojo Location: {{ request.session.dojo }}</p>
+        <p>Favorite Language: {{ request.session.favlang }}</p>
+        <p>Comment: {{ request.session.comment }}</p>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>

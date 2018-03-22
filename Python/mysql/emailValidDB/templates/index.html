@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Friends</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+ 
+    {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+                <h1> {{message}}</h1>
+            {% endfor %}
+        {% endif %}  
+    {% endwith %}
+
+    <h2>Email address:</h2>
+    <form action='/check' method='POST'>
+        <label for="email">Email:<input type="text" name="email"></label>
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>

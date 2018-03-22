@@ -1,0 +1,23 @@
+input {
+    display: block;
+}
+select {
+    display: block;
+}
+input{
+    background-color: aqua;
+    color: black;
+}
+div {
+    border: 2px solid black;
+    margin: 300px;
+    background-color: crimson;
+}
+h1{
+    text-decoration: underline;
+}
+a{
+    background-color: black;
+    display: inline;
+    padding: 10px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Ninja Gold</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    Your gold is: {{ request.session.gold }}<br>
+    <form action="/process", method="POST">
+        {% csrf_token %}
+        <h2>Farm</h2>
+        (earns 10-20 golds)
+        <input type="hidden" name="place" value='Farm'>
+        <input type="submit" value="Find Gold">
+    </form>
+    <form action="/process", method="POST">
+        {% csrf_token %}
+        <h2>Cave</h2>
+        (earns 5-10 golds)
+        <input type="hidden" name="place" value='Cave'>
+        <input type="submit" value="Find Gold" id="Cave">
+    </form>
+    <form action="/process", method="POST">
+        {% csrf_token %}
+        <h2>House</h2>
+        (earns 2-5 golds)
+        <input type="hidden" name="place" value='House'>
+        <input type="submit" value="Find Gold" id="House">
+    </form>
+    <form action="/process", method="POST">
+        {% csrf_token %}
+        <h2>Casino</h2>
+        (earns/takes 0-50 golds)
+        <input type="hidden" name="place" value='Casino'>
+        <input type="submit" value="Find Gold" id="Casino">
+    </form>
+    <form action="/reset", method="POST">
+        {% csrf_token %}
+        <input type="submit" value="Play Again" id="reset">
+    </form>
+    Activities:
+    <div>
+        {% for idx in request.session.db %}
+            {{ idx.post }}<br>
+        {% endfor %}
+    </div>
+</body>
+</html>

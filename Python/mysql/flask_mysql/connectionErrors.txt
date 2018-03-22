@@ -1,0 +1,16 @@
+'database' : dp,
+gives error of = global name 'dp' is not defined
+correct it by = 'database' : db,
+
+'user' : 'roo',
+gives error of = "Access denied for user 'roo'@'localhost' (using password: YES)"
+correct it by = 'user' : 'root',
+
+'password' : 'roo'
+gives error of = "Access denied for user 'root'@'localhost' (using password: YES)"
+correct it by = 'password' : 'root'
+
+'port' : '330'
+gives error of = "Can't connect to MySQL server on '127.0.0.1' (10061)"
+correct it by = port: 3306 (or which port MySQL is using)
+

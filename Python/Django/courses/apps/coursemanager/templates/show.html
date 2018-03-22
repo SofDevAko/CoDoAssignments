@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Course Manager</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    {% if request.session.active_username %}
+        <p>You are logged in as {{request.session.active_username}}</p>
+        <a href="/logout">Click to logout</a>    
+    {% endif %}
+    <a href="/">Home page</a>
+    <a href="/courses">See all courses</a>
+
+    <h3>Course Details</h3>
+    Course Name: {{ course.name }} <br>
+    Description: {{ course.description }} <br>
+    Created By: {{ course.created_by }} <br>
+    Date Added: {{ course.created_at }}<br>
+    
+    <h4>Liked by These Users</h4>
+    <ul>
+    {% for user in course.users_who_liked.all %}
+        <li>{{ user.username }}</li>
+    {% endfor %}
+    </ul>
+    <a href="/courses/like/{{course.id}}">Favorite</a><a href="/courses/destroy/{{course.id}}">Remove</a>
+    <h4>Comments to this course</h4>
+    <ul>
+        {% for comment in comments %}
+            <li>{{ comment.content }} said by: {{ comment.commenter.username }} said at: {{ comment.created_at }}<a href="/courses/delete/{{comment.id}}">Delete Comment</a></li>
+        {% endfor %}
+    </ul>
+    {% if messages %}{% for message in messages %}<h5>{{ message }}</h5>{% endfor %}{% endif %}
+    <form action="/courses/makecomment/{{course.id}}" method="post">
+        {% csrf_token %}
+    Make a comment: <input type="text" name="comment"><input type="submit" value="Send">
+    </form> 
+    
+</body>
+</html>

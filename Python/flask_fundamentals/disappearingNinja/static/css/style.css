@@ -1,0 +1,6 @@
+img {
+    padding: 10px;
+    background-color: greenyellow;
+    margin: 40px;
+    src:"static/img/{{ ninjacolor }}.png" alt="ninja_turtle.png";
+}

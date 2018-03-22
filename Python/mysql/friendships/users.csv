@@ -1,0 +1,5 @@
+id,first_name,last_name,created_at,updated_at
+1,Chris,Baker,NOW(),NOW()
+2,James,Johnson,NOW(),NOW()
+3,Jessica,Davidson,NOW(),NOW()
+4,Diana,Smith,NOW(),NOW()
