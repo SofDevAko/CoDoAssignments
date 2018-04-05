@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Ninja Class 3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <script>
+        class Ninja {
+            constructor(name, health) {
+                this.name = name;
+                this.health = typeof health !== "undefined" ? health : 100;
+                this.speed = 3;
+                this.strength = 3;
+            }
+
+            sayName() {
+                console.log("My ninja name is " + this.name + "!");
+            }
+            showStats() {
+                console.log("Name: " + this.name + ", Health: " + this.health + ", Speed: " + this.speed + ", Strength: " + this.strength + "");
+            }
+
+            drinkSake() {
+                console.log("GULP!")
+                this.health += 10;
+            };
+            punch(target) {
+                if (target instanceof Ninja) {
+                    target.health -= 5;
+                    console.log("" + target.name + " was punched by " + this.name + " and lost 5 Health!");
+
+                }
+                else { console.log("You must punch a ninja!") }
+
+
+            }
+            kick(target) {
+                if (target instanceof Ninja) {
+                    var amount = 15 * (this.strength);
+                    target.health -= amount;
+                    console.log("" + target.name + " was kicked by " + this.name + " and lost " + amount + " Health!");
+
+                }
+                else { console.log("You must kick a ninja!") }
+            }
+        }
+
+        class Sensei extends Ninja{
+            constructor(name,health,speed,strength,wisdom)
+            {
+                super(name, health, speed, strength);
+                this.health = typeof health !== "undefined" ? health : 200;
+                this.speed = typeof speed !== "undefined" ? speed : 10;
+                this.strength = typeof strength !== "undefined" ? strength : 10;
+                this.wisdom = typeof wisdom !== "undefined" ? wisdom : 10;
+            }
+            speakWisdom(){
+                this.drinkSake();
+                console.log("What one programmer can do in one month, two programmers can do in two months.");
+            }
+        }
+        const Hanzo = new Ninja("Hanzo", 120);
+        const Genji = new Ninja("Genji");
+        const AdnanSensei = new Sensei("Adnan");
+        Hanzo.showStats();
+        Hanzo.drinkSake();
+        Hanzo.drinkSake();
+        Hanzo.drinkSake();
+        Hanzo.drinkSake();
+        Hanzo.showStats();
+        Hanzo.punch(Genji);
+        Hanzo.punch("something other than ninja");
+        Genji.showStats();
+        Genji.kick(Hanzo);
+        Genji.kick("something other than ninja");
+        Hanzo.showStats();
+        AdnanSensei.speakWisdom();
+        AdnanSensei.showStats();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Ninja Class 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <script>
+        function Ninja(name, health) {
+            this.name = name;
+            this.health = typeof health !== "undefined" ? health : 100;
+            const speed = 3;
+            const strength = 3;
+
+            Ninja.prototype.sayName = function () {
+                console.log("My ninja name is " + this.name + "!");
+            }
+            Ninja.prototype.showStats = function () {
+                console.log("Name: " + this.name + ", Health: " + this.health + ", Speed: " + speed + ", Strength: " + strength + "");
+            }
+
+            this.drinkSake = function() {
+                this.health += 10;
+            };
+            this.punch = function(target)
+            {
+                if(target instanceof Ninja)
+                {
+                    target.health -= 5;
+                    console.log(""+target.name+" was punched by "+this.name+" and lost 5 Health!");
+                    
+                }
+                else{console.log("You must punch a ninja!")}
+                
+                
+            }
+            this.kick = function(target)
+            {
+                if(target instanceof Ninja)
+                {
+                    var amount = 15*(strength);
+                    target.health -= amount;
+                    console.log(""+target.name+" was kicked by "+this.name+" and lost "+amount+" Health!");
+                    
+                }
+                else{console.log("You must kick a ninja!")}
+            }
+            
+        }
+        const Hanzo = new Ninja("Hanzo",120);
+        const Genji = new Ninja("Genji");
+        Hanzo.showStats();
+        Hanzo.drinkSake();
+        Hanzo.drinkSake();
+        Hanzo.drinkSake();
+        Hanzo.drinkSake();
+        Hanzo.showStats();
+        Hanzo.punch(Genji);
+        Hanzo.punch("something other than ninja");
+        Genji.showStats();
+        Genji.kick(Hanzo);
+        Genji.kick("something other than ninja");
+        Hanzo.showStats();
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,3 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\music-linq\music-linq\obj\Debug\netcoreapp1.1.2\LinqSkeleton.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\music-linq\music-linq\obj\Debug\netcoreapp1.1.2\LinqSkeleton.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\music-linq\music-linq\obj\Debug\netcoreapp1.1.2\LinqSkeleton.AssemblyInfo.cs

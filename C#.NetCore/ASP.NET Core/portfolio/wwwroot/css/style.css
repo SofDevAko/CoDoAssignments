@@ -1,0 +1,36 @@
+h1{
+    text-align: center;
+}
+h3{
+    background-color: darkred;
+    border: 1px solid black;
+    padding: 10px 40px;
+}
+ul{
+    list-style-type: none;
+}
+.navbar{
+    background-color: darkred;
+    color: wheat;
+}
+.navbar a{
+    font-size: 120%;
+    text-decoration-style: None;
+    text-decoration: None;
+    border: 2px solid black;
+    display: inline-block;
+    padding: 20px 70px;
+    color: wheat;
+}
+.content{
+    background-color: sandybrown;
+    border: 3px saddlebrown solid;
+    color: black; 
+    text-align: center;
+}
+img{
+    height: 640px;
+    width: 500px;
+    border: 3px solid black;
+    margin: 10px 40px;
+}

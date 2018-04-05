@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\bin\Debug\netcoreapp2.0\collectionsPractice.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\bin\Debug\netcoreapp2.0\collectionsPractice.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\bin\Debug\netcoreapp2.0\collectionsPractice.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\bin\Debug\netcoreapp2.0\collectionsPractice.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\bin\Debug\netcoreapp2.0\collectionsPractice.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\obj\Debug\netcoreapp2.0\collectionsPractice.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\obj\Debug\netcoreapp2.0\collectionsPractice.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\obj\Debug\netcoreapp2.0\collectionsPractice.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\obj\Debug\netcoreapp2.0\collectionsPractice.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\collectionsPractice\obj\Debug\netcoreapp2.0\collectionsPractice.pdb

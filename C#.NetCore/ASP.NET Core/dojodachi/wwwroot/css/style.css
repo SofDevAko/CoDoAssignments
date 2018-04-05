@@ -1,0 +1,38 @@
+#wrapper{
+    text-align: center;
+    margin: 5% 10%;
+}
+ul a{
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    background-color: gray;
+    padding: 5px;
+    color: black;
+    box-shadow: black 3px 3px;
+}
+h4{
+    background-color: yellowgreen;
+    border: brown 1px solid;
+    padding: 10px;
+    display: inline;
+    margin: 10px;
+}
+#template{
+    border: 3px solid black;
+    margin: 10px;
+}
+img#big{
+    height: 350px;
+    width: 450px;
+    z-index: 2;
+    margin: 1% 35%;
+}
+img#small{
+    height: 115px;
+    width: 135px;
+    z-index: 3;
+    position: relative;
+    top: -250px;
+    left: -22px;
+}

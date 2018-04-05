@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Wedding Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    @model weddingPlanner.Models.NewWedding
+    <h1>Plan Your Wedding</h1>
+    <a href="/logout">Not @ViewBag.user.FirstName? Click to Logout</a><br>
+    <a href="/dashboard">Dashboard</a>
+
+    <form asp-controller="Wedding" asp-action="CreateWedding" method="post">
+        
+        <label asp-for="WedOne">Wedder One</label>
+        <input asp-for="WedOne"/><br>
+
+        <label asp-for="WedTwo">Wedder Two</label>
+        <input asp-for="WedTwo"/><br>
+        
+        <label asp-for="Date">Wedding Date</label>
+        <input type="date" asp-for="Date"/><br>
+        
+        <label asp-for="Address">Address</label>
+        <input asp-for="Address"/><br>
+        <button type="submit">Create Wedding</button><br>
+    </form>
+    <hr>
+    <div asp-validation-summary="All"></div>
+  
+</body>
+</html>

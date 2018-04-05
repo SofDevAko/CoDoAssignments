@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Restauranter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    @model restauranter.Models.Review
+    <h1>Write a new Review:</h1>
+    <a href="index">See all Reviews</a>
+    <form asp-controller="REST" asp-action="AddReview" method="post">
+        
+        <label asp-for="Reviewer">Reviewer Name: </label>
+        <input asp-for="Reviewer"/><br>
+        
+        <label asp-for="Restaurant">Restaurant Name: </label>
+        <input asp-for="Restaurant"/><br>
+        
+        <label asp-for="Content">Review: </label>
+        <input asp-for="Content"/><br>
+        
+        <label asp-for="VisitDate">Date of Visit</label>
+        <input type="date" asp-for="VisitDate"/><br>
+        
+        <label asp-for="Star">Stars</label>
+        <input type="number" min="1" max="5" asp-for="Star"/><br>
+        <button type="submit">Submit Review</button><br>
+    </form>
+    <div asp-validation-summary="All"></div>
+</body>
+</html>

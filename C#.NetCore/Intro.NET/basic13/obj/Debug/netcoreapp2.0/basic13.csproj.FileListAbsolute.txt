@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\bin\Debug\netcoreapp2.0\basic13.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\bin\Debug\netcoreapp2.0\basic13.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\bin\Debug\netcoreapp2.0\basic13.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\bin\Debug\netcoreapp2.0\basic13.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\bin\Debug\netcoreapp2.0\basic13.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\obj\Debug\netcoreapp2.0\basic13.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\obj\Debug\netcoreapp2.0\basic13.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\obj\Debug\netcoreapp2.0\basic13.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\obj\Debug\netcoreapp2.0\basic13.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\basic13\obj\Debug\netcoreapp2.0\basic13.pdb

@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\bin\Debug\netcoreapp2.0\restauranter.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\bin\Debug\netcoreapp2.0\restauranter.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\bin\Debug\netcoreapp2.0\restauranter.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\bin\Debug\netcoreapp2.0\restauranter.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\bin\Debug\netcoreapp2.0\restauranter.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\obj\Debug\netcoreapp2.0\restauranter.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\obj\Debug\netcoreapp2.0\restauranter.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\obj\Debug\netcoreapp2.0\restauranter.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\obj\Debug\netcoreapp2.0\restauranter.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\restauranter\obj\Debug\netcoreapp2.0\restauranter.pdb

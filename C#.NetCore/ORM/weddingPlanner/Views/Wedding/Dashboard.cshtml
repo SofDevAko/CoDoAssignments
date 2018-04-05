@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Wedding Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    
+    <h1>Welcome to Wedding Planner @ViewBag.user.FirstName!</h1>
+    <a href="logout">Not @ViewBag.user.FirstName? Click to Logout</a><br>
+
+    <table>
+        <thead>
+            <th>Wedding</th>
+            <th>Date</th>
+            <th>Guest</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            
+            @foreach(var wed in @ViewBag.weddings)
+            {
+                
+                <tr>
+                    <td><a asp-controller="Wedding" asp-action="ShowWedding" asp-route-wedid="@wed.WedId">@wed.WedOne & @wed.WedTwo</a></td>
+                    <td>@wed.Date</td>
+                    <td>@wed.GuestList.Count</td>
+                    <td>
+                    @if(wed.User_Id == ViewBag.user.UserId)
+                    {
+                        <a asp-controller="Wedding" asp-action="DeleteWedding" asp-route-wedid="@wed.WedId">Delete</a>
+                    }
+                    else
+                    {
+                        bool found = false;
+
+                        @foreach(var guest in ViewBag.guests)
+                        {
+                            var attend = 0;
+                            if (guest.UserId == ViewBag.User.UserId && guest.WedId == wed.WedId)
+                            {
+                                found = true;
+                            }
+                        }
+
+                        @if( found == true)
+                        {
+                            <a asp-controller="Wedding" asp-action="UnattendWedding" asp-route-wedid="@wed.WedId">Unattend</a>
+                        }
+                        else
+                        {
+                            <a asp-controller="Wedding" asp-action="AttendWedding" asp-route-wedid="@wed.WedId">Attend</a>
+                        }
+                    }
+                    
+                    
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+<a href="newwedding">Add a new Wedding</a>
+</body>
+</html>

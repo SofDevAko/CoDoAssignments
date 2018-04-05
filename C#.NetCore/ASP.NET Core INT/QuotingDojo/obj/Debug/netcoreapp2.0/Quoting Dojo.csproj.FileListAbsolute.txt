@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\bin\Debug\netcoreapp2.0\Quoting Dojo.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\bin\Debug\netcoreapp2.0\Quoting Dojo.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\bin\Debug\netcoreapp2.0\Quoting Dojo.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\bin\Debug\netcoreapp2.0\Quoting Dojo.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\bin\Debug\netcoreapp2.0\Quoting Dojo.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\obj\Debug\netcoreapp2.0\Quoting Dojo.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\obj\Debug\netcoreapp2.0\Quoting Dojo.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\obj\Debug\netcoreapp2.0\Quoting Dojo.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\obj\Debug\netcoreapp2.0\Quoting Dojo.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core INT\Quoting Dojo\obj\Debug\netcoreapp2.0\Quoting Dojo.pdb

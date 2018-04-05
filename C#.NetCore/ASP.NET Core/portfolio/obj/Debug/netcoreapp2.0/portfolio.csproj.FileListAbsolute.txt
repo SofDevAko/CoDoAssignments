@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\bin\Debug\netcoreapp2.0\portfolio.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\bin\Debug\netcoreapp2.0\portfolio.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\bin\Debug\netcoreapp2.0\portfolio.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\bin\Debug\netcoreapp2.0\portfolio.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\bin\Debug\netcoreapp2.0\portfolio.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\obj\Debug\netcoreapp2.0\portfolio.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\obj\Debug\netcoreapp2.0\portfolio.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\obj\Debug\netcoreapp2.0\portfolio.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\obj\Debug\netcoreapp2.0\portfolio.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\portfolio\obj\Debug\netcoreapp2.0\portfolio.pdb

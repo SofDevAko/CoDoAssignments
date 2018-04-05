@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\bin\Debug\netcoreapp2.0\bankAccounts.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\bin\Debug\netcoreapp2.0\bankAccounts.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\bin\Debug\netcoreapp2.0\bankAccounts.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\bin\Debug\netcoreapp2.0\bankAccounts.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\bin\Debug\netcoreapp2.0\bankAccounts.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\obj\Debug\netcoreapp2.0\bankAccounts.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\obj\Debug\netcoreapp2.0\bankAccounts.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\obj\Debug\netcoreapp2.0\bankAccounts.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\obj\Debug\netcoreapp2.0\bankAccounts.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ORM\bankAccounts\obj\Debug\netcoreapp2.0\bankAccounts.pdb

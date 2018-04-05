@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's JS Objects</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <script>
+        // //1 Print all of the students and their cohort. 
+        // let students = [
+        //     { name: 'Remy', cohort: 'Jan' },
+        //     { name: 'Genevieve', cohort: 'March' },
+        //     { name: 'Chuck', cohort: 'Jan' },
+        //     { name: 'Osmund', cohort: 'June' },
+        //     { name: 'Nikki', cohort: 'June' },
+        //     { name: 'Boris', cohort: 'June' }
+        // ];
+        // for(var std of students)
+        // {
+        //     console.log("Name: "+std.name+", Cohort: "+std.cohort+"")
+        // }
+
+        //2 Print out the below object to match the example. 
+        let users = {
+            employees: [
+                { 'first_name': 'Miguel', 'last_name': 'Jones' },
+                { 'first_name': 'Ernie', 'last_name': 'Bertson' },
+                { 'first_name': 'Nora', 'last_name': 'Lu' },
+                { 'first_name': 'Sally', 'last_name': 'Barkyoumb' }
+            ],
+            managers: [
+                { 'first_name': 'Lillian', 'last_name': 'Chambers' },
+                { 'first_name': 'Gordon', 'last_name': 'Poe' }
+            ]
+        };
+
+        for(var i = 1; i< users.employees.length+1; i++)
+        {
+                console.log(""+i+" - "+users.employees[i-1].last_name+", "+users.employees[i-1].first_name+" - "+(users.employees[i-1].last_name.length+users.employees[i-1].first_name.length)+"");
+        }
+        for(var i = 1; i< users.managers.length+1; i++)
+        {
+                console.log(""+i+" - "+users.managers[i-1].last_name+", "+users.managers[i-1].first_name+" - "+(users.managers[i-1].last_name.length+users.managers[i-1].first_name.length)+"");
+        }
+        
+
+
+    </script>
+</body>
+
+</html>

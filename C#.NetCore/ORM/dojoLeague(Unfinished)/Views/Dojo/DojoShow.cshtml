@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Dojo League</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <h1>Dojo League</h1>
+    <h2>Dojo Name: @ViewBag.dojo.Name</h2>
+    <h4>Dojo Location: @ViewBag.dojo.Location</h4>
+    <h5>Information: @ViewBag.dojo.Info</h5>
+    <h5>Current Members:</h5>
+    <table>
+        <thead>
+            <th>Ninja</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            @foreach (var curninja in @ViewBag.curninjas)
+                {
+                <tr>
+                    <td>@curninja.Name</td>
+                    <td><a href="banish/@curninja.Id">Banish from Dojo!</a></td>
+                </tr>
+                }
+        </tbody>
+    </table>
+    <h5>Current Members:</h5>
+    <table>
+        <thead>
+            <th>Ninja</th>
+            <th>Action</th>
+        </thead>
+        <tbody>
+            @foreach (var rogninja in @ViewBag.rogninjas)
+                {
+                <tr>
+                    <td>@rogninja.Name</td>
+                    <td><a href="recuit/@rogninja.Id">Recuit to Dojo!</a></td>
+                </tr>
+                }
+        </tbody>
+    </table>
+</body>
+</html>

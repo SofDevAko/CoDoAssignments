@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\bin\Debug\netcoreapp2.0\randomPasscode.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\bin\Debug\netcoreapp2.0\randomPasscode.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\bin\Debug\netcoreapp2.0\randomPasscode.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\bin\Debug\netcoreapp2.0\randomPasscode.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\bin\Debug\netcoreapp2.0\randomPasscode.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\obj\Debug\netcoreapp2.0\randomPasscode.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\obj\Debug\netcoreapp2.0\randomPasscode.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\obj\Debug\netcoreapp2.0\randomPasscode.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\obj\Debug\netcoreapp2.0\randomPasscode.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\randomPasscode\obj\Debug\netcoreapp2.0\randomPasscode.pdb

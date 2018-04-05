@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Wedding Planner</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    @model weddingPlanner.Models.LogReg
+    <h1>Wedding Planner</h1>
+    <h2>Register</h2>
+    <form asp-controller="User" asp-action="CreateUser" method="post">
+        
+        <label asp-for="reg.FirstName">First Name</label>
+        <input asp-for="reg.FirstName"/><br>
+
+        <label asp-for="reg.LastName">Last Name</label>
+        <input asp-for="reg.LastName"/><br>
+        
+        <label asp-for="reg.Email">Email</label>
+        <input asp-for="reg.Email"/><br>
+        
+        <label asp-for="reg.Password">Password</label>
+        <input asp-for="reg.Password"/><br>
+        
+        <label asp-for="reg.ConfirmPassword">Confirm Password</label>
+        <input asp-for="reg.ConfirmPassword"/><br>
+        <button type="submit">Register</button><br>
+    </form>
+    <hr>
+    <div asp-validation-summary="All"></div>
+    <hr>
+    <h2>Login</h2>
+    <form asp-controller="User" asp-action="Login" method="post">
+        
+        <label asp-for="log.Email">Email</label>
+        <input asp-for="log.Email"/><br>
+        
+        <label asp-for="log.Password">Password</label>
+        <input asp-for="log.Password"/><br>
+        
+        <button type="submit">Login</button><br>
+    </form>
+</body>
+</html>

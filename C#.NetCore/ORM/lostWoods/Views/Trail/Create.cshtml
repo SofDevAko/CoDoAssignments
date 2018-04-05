@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Lost in the Woods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    @model lostWoods.Models.Trail
+    <h3>Create a new local hiking trail</h3>
+
+<form asp-controller="Trail" asp-action="Create" method="post">
+    <label asp-for="Name"></label>
+    <input asp-for="Name"/>
+    <label asp-for="Description"></label>
+    <input asp-for="Description"/>
+    <label asp-for="Length"></label>
+    <input asp-for="Length"/>
+    <label asp-for="Elevation"></label>
+    <input asp-for="Elevation"/>
+    <label asp-for="Lon"></label>
+    <input asp-for="Lon"/>
+    <label asp-for="Lat"></label>
+    <input asp-for="Lat"/>
+
+    <button type="submit">Create new trail</button>
+</form>
+<div asp-validation-summary="All"></div>
+    <a href="/">Go back to the trails</a>
+</body>
+</html>

@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\bin\Debug\netcoreapp2.0\timeDisplay.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\bin\Debug\netcoreapp2.0\timeDisplay.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\bin\Debug\netcoreapp2.0\timeDisplay.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\bin\Debug\netcoreapp2.0\timeDisplay.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\bin\Debug\netcoreapp2.0\timeDisplay.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\obj\Debug\netcoreapp2.0\timeDisplay.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\obj\Debug\netcoreapp2.0\timeDisplay.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\obj\Debug\netcoreapp2.0\timeDisplay.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\obj\Debug\netcoreapp2.0\timeDisplay.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\ASP.NET Core\timeDisplay\obj\Debug\netcoreapp2.0\timeDisplay.pdb

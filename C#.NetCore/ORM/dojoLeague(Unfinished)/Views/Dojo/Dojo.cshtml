@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Dojo League</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    @model dojoLeague.Models.Dojo
+    <h1>Dojo League</h1>
+    <h2>All Dojos</h2>
+    <table>
+        <thead>
+            <th>Dojo Name</th>
+        </thead>
+        <tbody>
+            @foreach(var dojo in ViewBag.dojos)
+            {
+                <tr>
+                    <td>@dojo.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr>
+    <h2>Register a new Dojo</h2>
+    <form asp-controller="Dojo" asp-action="AddDojo" method="post">
+        <label asp-for="Name">Dojo Name: </label>
+        <input asp-for="Name"/><br>
+        <label asp-for="Location">Dojo Location: </label>
+        <input asp-for="Location"/><br>
+        <label asp-for="Info"></label>
+        <input asp-for="Info"/>
+    
+        <button type="submit">Create Dojo</button>
+    </form>
+    <div asp-validation-summary="All"></div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Dojo League</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    @model dojoLeague.Models.Ninja
+    <h1>Dojo League</h1>
+    <h2>Registered Ninjas</h2>
+    <table>
+        <thead>
+            <th>Ninja Name</th>
+            <th>Ninja Dojo</th>
+        </thead>
+        <tbody>
+            @foreach(var ninja in ViewBag.ninjas)
+            {
+                <tr>
+                    <td><a href="ninja/@ninja.Id">@ninja.Name</a></td>
+                    <td><a href="ninja/@ninja.Dojo.Id">@ninja.Dojo</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    <hr>
+    <h2>Register a new Ninja</h2>
+    <form asp-controller="Ninja" asp-action="AddNinja" method="post">
+        <label asp-for="Name">Ninja Name: </label>
+        <input asp-for="Name"/><br>
+        <label asp-for="Level">Ninja Level(1-10): </label>
+        <input type="range" min="1" max="10" asp-for="Level"/><br>
+        <label asp-for="Dojo"></label>
+        <select asp-for="Dojo"/>
+        @foreach(var ninja in @ViewBag.ninjas)
+        {
+            <option value="@ninja.Dojo.Name">@ninja.Dojo.Name</option>
+        }
+            <option value="rogue">Rogue</option>
+        </select><br>
+        <label asp-for="Description"></label>
+        <input asp-for="Description"/><br>
+    
+        <button type="submit">Create Ninja</button>
+    </form>
+    <div asp-validation-summary="All"></div>
+</body>
+</html>

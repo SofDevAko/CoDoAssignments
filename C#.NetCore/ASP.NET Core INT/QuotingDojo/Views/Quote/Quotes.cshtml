@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Quoting Dojo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    <h2>Here are the awesome quotes!</h2>
+    <ul>
+    @{
+        foreach (var quote in ViewBag.quotes)
+        {
+            <cite><li><p>@quote["quote"]</p></li></cite>
+            <li><p>"- "@quote["user"]" said at "@quote["created_at"]"</p></li>
+            <hr>
+        }
+    }
+    </ul>
+    
+</body>
+</html>

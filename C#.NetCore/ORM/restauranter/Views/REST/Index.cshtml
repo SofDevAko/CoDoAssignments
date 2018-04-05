@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Restauranter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    @model restauranter.Models.Review
+    <h1>All Reviews:</h1>
+    @foreach (var rev in @ViewBag.allreviews)
+    {
+        <h2>Review for: @rev.Restaurant</h2>
+        <h3>Reviewer: @rev.Reviewer , @rev.VisitDate</h3>
+        <h4>Stars: @rev.Star</h4>
+        <p>@rev.Content</p>
+        <hr>
+    }
+</body>
+</html>

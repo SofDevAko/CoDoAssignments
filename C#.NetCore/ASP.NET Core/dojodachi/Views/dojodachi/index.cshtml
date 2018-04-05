@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Dojodachi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/style.css"/>
+</head>
+<body>
+    @{
+        string imgurl = "/img/hatchi_"+ ViewBag.image +".png"; 
+    }
+
+    <div id="wrapper">
+        <h1>Akin's Dojodachi</h1>
+        <h4>Fullness: @ViewBag.fullness / Happiness: @ViewBag.happiness / Meals: @ViewBag.meals / Energy: @ViewBag.energy</h4>
+        <div id="template">
+            <img src="~/img/template.png" id="big">
+            <img src=@imgurl id="small">
+            <p id="text">@ViewBag.text</p>
+        </div>
+        <ul>
+            @{ 
+                var cond = ViewBag.cond;
+                if (cond != null){
+                    <a href="reset"><li>Restart</li></a>
+                }
+                else
+                {
+                    <a href="feed"><li>Feed</li></a>
+                    <a href="play"><li>Play</li></a>
+                    <a href="work"><li>Work</li></a>
+                    <a href="sleep"><li>Sleep</li></a>
+                    
+                }
+            }
+            
+        </ul>
+    </div>
+</body>
+</html>

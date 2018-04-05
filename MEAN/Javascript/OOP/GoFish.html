@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Goldfish</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <script>
+        function Player(name) {
+            this.name = name;
+            this.hand = [];
+            this.point = 0;
+        }
+        Player.prototype.ask = function (player, value) {
+            var ask = value;
+            var result = [];
+            for(var i=0; i< player.hand;i++){
+                if(player.hand[i].value == ask){
+                    result.push(player.hand[i]);
+                }
+            }
+            
+        };
+        Player.prototype.give = function () {
+
+        };
+        Player.prototype.draw = function () {
+
+        };
+
+        function Card(suit, value) {
+            this.suit = suit;
+            this.value = value;
+        }
+        function Deck() {
+            this.cards = [];
+            this.createDeck = function () {
+                this.cards = [];
+                var suits = ["Hearts", "Diamonds", "Spades", "Clubs"];
+                var values = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+                for (var suit of suits) {
+                    for (var value of values) {
+                        var newcard = new Card(suit, value);
+
+                        this.cards.push(newcard);
+                    }
+                }
+            }
+            this.shuffle = function () {
+                for (var i = 0; i < this.cards.length; i++) {
+                    var rand = Math.floor(Math.random() * this.cards.length);
+                    var temp = this.cards[i];
+                    this.cards[i] = this.cards[rand];
+                    this.cards[rand] = temp;
+                }
+            }
+            this.deal = function (num, player) {
+                for (var i = 0; i < num; i++) {
+                    var dealcard = this.cards[0];
+                    console.log(dealcard);
+                    player.hand.push(dealcard);
+                    this.cards.shift();
+                }
+            }
+
+        }
+
+        var examDeck = new Deck();
+        examDeck.createDeck();
+        console.log(examDeck.cards);
+        examDeck.shuffle();
+        examDeck.shuffle();
+        const Gabe = new Player("Gabe");
+        const Akin = new Player("Akin");
+        examDeck.deal(7,Gabe);
+        examDeck.deal(7,Akin);
+        console.log(Gabe.hand);
+        console.log(Akin.hand);
+        console.log(examDeck.cards);
+    </script>
+</body>
+
+</html>

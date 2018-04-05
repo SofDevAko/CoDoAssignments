@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Bank Accounts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+    @model bankAccounts.Models.Transaction
+
+    <h1>Welcome @ViewBag.AccInfo.UserName</h1>
+    <a href="logout">Not @ViewBag.AccInfo.UserName? Click to Logout</a>
+    <h2>Your account is:</h2>
+    <h4>Current Balance is: $ @ViewBag.AccInfo.Balance</h4>
+    <form asp-controller="Account" asp-action="AddTransaction" method="post">
+        
+            <label asp-for="Description">Description</label>
+            <input asp-for="Description"/><br>
+            
+            <label asp-for="Amount">Amount</label>
+            <input asp-for="Amount"/><br>
+            
+            <button type="submit">Make Transaction</button><br>
+        </form>
+        <div asp-validation-summary="All"></div>
+        @if(ViewBag.Error != null)
+        {
+            <h3>@ViewBag.Error</h3>
+        }
+        <hr>
+        <h3>Past Transactions</h3>
+        <table>
+            <thead>
+                <th>Amount</th>
+                <th>Description</th>
+                <th>Date</th>
+            </thead>
+            <tbody>
+                @foreach(var trans in @ViewBag.AccInfo.Changes)
+                {
+                <tr>
+                    <td>@trans.Amount</td>
+                    <td>@trans.Description</td>
+                    <td>@trans.Date</td>
+                </tr>
+                }
+            </tbody>
+        </table>
+</body>
+</html>

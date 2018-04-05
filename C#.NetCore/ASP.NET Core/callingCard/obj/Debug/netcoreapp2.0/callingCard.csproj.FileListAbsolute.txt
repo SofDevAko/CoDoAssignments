@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\bin\Debug\netcoreapp2.0\callingCard.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\bin\Debug\netcoreapp2.0\callingCard.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\bin\Debug\netcoreapp2.0\callingCard.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\bin\Debug\netcoreapp2.0\callingCard.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\bin\Debug\netcoreapp2.0\callingCard.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\obj\Debug\netcoreapp2.0\callingCard.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\obj\Debug\netcoreapp2.0\callingCard.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\obj\Debug\netcoreapp2.0\callingCard.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\obj\Debug\netcoreapp2.0\callingCard.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\callingCard\obj\Debug\netcoreapp2.0\callingCard.pdb

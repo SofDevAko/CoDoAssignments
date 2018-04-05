@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Survey Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel copy='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // this triggers the connection event in our server!
+            var socket = io.connect();
+            // we'll write all the socket stuff after the above line!
+            $('form').submit(function (e) {
+                
+                socket.emit("posting_form", $(this).serializeArray());
+                socket.emit("random_number");
+                e.preventDefault();
+            });
+            socket.on('server_response', function (data) {
+                var jsonres = JSON.stringify(data.response);
+                $("#response").append(jsonres);
+            });
+            socket.on('random_response', function (data) {
+                $("#response").append(" and your lucky number is: "+data.response);
+            });
+
+        })
+    </script>
+
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <input type="text" name="Name">
+        <select name="Location">
+            <option value="Chicago">Chicago</option>
+            <option value="San Jose">San Jose</option>
+            <option value="Somewhere">Somewhere</option>
+        </select>
+        <select name="Language">
+            <option value="C#">C#</option>
+            <option value="Python">Python</option>
+            <option value="Javascript">Javascript</option>
+        </select>
+        <input type="text" name="Comment">
+        <input type="submit" value="Submit!" id="submit">
+    </form>
+    <div id="response">
+        <!-- Response populates this div! -->
+    </div>
+</body>
+
+</html>

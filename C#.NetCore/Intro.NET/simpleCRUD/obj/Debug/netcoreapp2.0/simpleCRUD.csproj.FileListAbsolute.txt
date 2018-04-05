@@ -1,0 +1,10 @@
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\bin\Debug\netcoreapp2.0\simpleCRUD.deps.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\bin\Debug\netcoreapp2.0\simpleCRUD.runtimeconfig.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\bin\Debug\netcoreapp2.0\simpleCRUD.runtimeconfig.dev.json
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\bin\Debug\netcoreapp2.0\simpleCRUD.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\bin\Debug\netcoreapp2.0\simpleCRUD.pdb
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\obj\Debug\netcoreapp2.0\simpleCRUD.csproj.CoreCompileInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\obj\Debug\netcoreapp2.0\simpleCRUD.AssemblyInfoInputs.cache
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\obj\Debug\netcoreapp2.0\simpleCRUD.AssemblyInfo.cs
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\obj\Debug\netcoreapp2.0\simpleCRUD.dll
+C:\Users\akino\Desktop\Akin\Coding Dojo\DojoAssignments\C#.NetCore\Intro.NET\simpleCRUD\obj\Debug\netcoreapp2.0\simpleCRUD.pdb
