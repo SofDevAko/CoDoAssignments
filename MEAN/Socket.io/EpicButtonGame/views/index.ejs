@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Epic Button Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel copy='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // this triggers the connection event in our server!
+            var socket = io.connect();
+            socket.emit("login");
+            // we'll write all the socket stuff after the above line!
+            $('#epic').click(function (e) {
+                
+                socket.emit("update_click");
+            });
+            $('#reset').click(function (e) {
+                
+                socket.emit("reset_click");
+
+            });
+            socket.on('server_response', function (data) {
+                console.log(data.response)
+                $("#count").html(data.response);
+            });
+            
+        })
+    </script>
+
+</head>
+
+<body>
+   <h1>The Button has been pushed <span id="count"></span> time(s)!</h1>
+   <h3>Push the button to update the count!</h3>
+   <button id="epic">The Epic Button</button>
+   <button id="reset">Reset</button>
+</body>
+
+</html>
