@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Chatrooms</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel copy='stylesheet' href='/stylesheets/style.css' />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/socket.io/socket.io.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // this triggers the connection event in our server!
+            var name = prompt("Please enter your name:");
+            var socket = io.connect();
+            // we'll write all the socket stuff after the above line!
+            socket.emit("new_connection", { name: name });
+            socket.on('updated', function (data) {
+                console.log(data.messages);
+                if (data.messages.length > 0) {
+                    console.log("getting there")
+                    for (var i = 0; i < data.messages.length; i++) {
+                        console.log("YAY!")
+                        $("#box").append("<tr><td>" + data.messages[i].name + "</td> <td>" + data.messages[i].message + "</td></tr>")
+                        console.log(i);
+                    }
+                }
+
+            });
+            $('form#message').submit(function (e) {
+                var msg = { name: name, message: $('#mesinp').val() }
+                socket.emit("new_message", { msg: msg });
+                e.preventDefault();
+            });
+            socket.on('user_joined', function(newuser){
+                $('#announcement').html(""+newuser.data.name+" has recently joined!").slideDown(1000).delay(3000).slideUp(1000);
+            })
+
+            socket.on('message_added', function (new_message) {
+                $("#box").append("<tr><td>" + new_message.new_message.name + "</td> <td>" + new_message.new_message.message + "</td></tr>");
+            });
+
+        })
+    </script>
+</head>
+
+<body>
+    <h1>Welcome to Chatrooms!</h1>
+    <div id="announcement" style="display: inline-block; color:red; font-weight:bold; font-size:120%; background-color:rgb(233, 191, 150); padding:10px;"></div>
+    <table id="content" style="border:1px solid black; height:50%; width:50%">
+        <thead>
+            <th>User Name</th>
+            <th>Message</th>
+        </thead>
+        <tbody id="box">
+
+        </tbody>
+    </table>
+    <form id="message" action="/submit" method="POST">
+        <input type="text" name="message" id="mesinp">
+        <input type="submit" value="Send!">
+    </form>
+</body>
+
+</html>
