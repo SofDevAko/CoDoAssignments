@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Mongoose Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h2>Create your own Owl!</h2>
+    <form action="/newowl" method="post">
+        <label for="name">Owl's Name: </label>
+        <input type="text" name="name"><br>
+        <label for="age">Age: </label>
+        <input type="number" name="age"><br>
+        <label for="color">Color: </label>
+        <input type="text" name="color"><br>
+        <label for="length">Length(cm): </label>
+        <input type="text" name="length"><br>
+        <label for="wingspan">Wingspan(cm): </label>
+        <input type="text" name="wingspan"><br>
+
+        <button type="submit">Add my Owl!</button>
+    </form>
+    <a href="/">Home</a>
+    <% if(typeof(errors) != 'undefined' ) { %>
+        <% for (var x in errors) { %>
+         <h3><%= errors[x] %></h3>
+        <% } %>
+    <% } %>
+   
+</body>
+</html>

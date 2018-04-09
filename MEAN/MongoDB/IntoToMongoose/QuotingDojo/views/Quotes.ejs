@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Quoting Dojo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h2>Here are some awesome quotes!</h2>
+    <br>
+    <div id="quotebox">
+        <% if( allquotes.length > 0 ) { %>
+            <% for (var x in allquotes) { %>
+                <h3>"<%= allquotes[x].quote  %>"</h3> <br>
+            by:
+            <h3><%= allquotes[x].name  %></h3>
+            at: <%= allquotes[x].created_at  %><hr>
+             
+            <% } %>
+        <% } %>
+       
+    </div>
+</body>
+</html>
