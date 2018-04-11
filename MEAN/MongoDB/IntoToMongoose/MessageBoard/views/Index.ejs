@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Akin's Message Board</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <h1>Dojo Message Board</h1>
+    <hr>
+
+    <form action="/newpost" method="post">
+        <label for="name">Name: </label>
+        <input type="text" name="name" ><br>
+        <label for="text">Message: </label>
+        <input type="text" name="text" >
+        <input type="submit" value="Post Message">
+    </form>
+    <% if(typeof(errors) != 'undefined' ) { %>
+        <% for (var x in errors) { %>
+         <h3><%= errors[x] %></h3>
+        <% } %>
+    <% } %>
+
+    <div id="box">
+        <% if(posts) { %>
+            <% for(var post of posts) { %>
+                <h2>Name: <%= post.name %></h2>
+                <h2>Message: <%= post.text %></h2>
+                <% if(post.comments.length > 0) { %>
+                    <% for(var comment of post.comments) { %>
+                        <% console.log(comment) %>
+                        <h3>Commenter: <%= comment.commenter %></h3>
+                        <h3>Comment: <%= comment.text %></h3>
+                        
+                    <% } %>
+                <% } %>
+                <form action="/posts/<%= post._id%>" method="post">
+                    <label for="commenter">Name: </label>
+                    <input type="text" name="commenter" ><br>
+                    <label for="text">Message: </label>
+                    <input type="text" name="text" >
+                    <input type="submit" value="Post Comment">
+                </form>
+                <hr>
+            <% } %>
+        <% } %>
+    </div>
+</body>
+</html>
