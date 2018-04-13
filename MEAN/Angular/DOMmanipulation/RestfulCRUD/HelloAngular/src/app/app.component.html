@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<h2>New Task</h2>
+<form (submit)="createTask()">
+  <label for="title">Title: </label>
+  <input type="text" name="newTask.title" [(ngModel)]="newTask.title" />
+  <label for="description">Description: </label>
+  <input type="text" name="newTask.description" [(ngModel)]="newTask.description"/>
+  <input type="submit" value="Create Task!">
+</form>
+
+<button (click)="getTasksFromService()">Get All Tasks</button>
+<h2>Task List:</h2>
+<h3 *ngFor="let task of tasks">{{task.title}} : {{task.description}} <button class="{{task._id}}" (click)="showTask(task._id)">Edit</button> <button (click)="deleteTask(task._id)">Delete</button> </h3>
+
+<form *ngIf="edit" (submit)="updateTask(editTask._id)">
+  <label *ngIf="edit" for="title">Title: </label>
+  <input *ngIf="edit" name="editTask.title" type="text" [(ngModel)]="editTask.title">
+  <label *ngIf="edit" for="description">Description: </label>
+  <input *ngIf="edit" name="editTask.description" type="text" [(ngModel)]="editTask.description">
+  <input *ngIf="edit" type="submit" value="Edit Task!">
+</form>
+<p *ngIf="edit">{{edittask | json}}</p>
