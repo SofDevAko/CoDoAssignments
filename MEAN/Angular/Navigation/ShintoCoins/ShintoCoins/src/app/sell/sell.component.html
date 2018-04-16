@@ -1,0 +1,10 @@
+<h2>
+  Sell ShintoCoins
+</h2>
+<p>You have {{samount}} ShintoCoins </p>
+<p>ShintoCoin value is {{svalue}}</p>
+<form (submit)="sellCoin()">
+  <input type="number" min="1" name="int" [(ngModel)]="int">
+  <input type="submit" value="Sell Coins">
+</form>
+<h3 *ngIf="message">{{message}}</h3>
