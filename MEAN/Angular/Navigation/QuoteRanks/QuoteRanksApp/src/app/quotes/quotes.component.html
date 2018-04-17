@@ -1,0 +1,17 @@
+<button class="btn btn-info btn-lg" [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span> Home</button><br>
+<button class="btn btn-secondary" [routerLink]="['/write', id]"><span class="glyphicon glyphicon-pencil"></span> Write a Quote</button>
+<h2>Here are the quotes by {{author}}:</h2>
+<table class="table table-stripped" *ngIf="quotes">
+  <thead>
+    <th class="text-center">Quote</th>
+    <th class="text-center">Likes</th>
+    <th class="text-center">Actions</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let quote of quotes">
+    <td>'{{quote.content}}'</td>
+    <td>{{quote.likeCount}}</td>
+    <td><button type="button" class="btn btn-success">Like</button><button  type="button" class="btn btn-warning">Dislike</button><button type="button" class="btn btn-danger">Delete</button></td>
+  </tr>
+</tbody>
+</table>

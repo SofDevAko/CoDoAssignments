@@ -1,0 +1,13 @@
+<button type="button" class="btn btn-info" [routerLink]="['/new']">Add new Author</button>
+<table class="table table-striped">
+  <thead>
+    <th class="text-center">Author</th>
+    <th class="text-center">Actions</th>
+  </thead>
+  <tbody *ngIf="authors">
+    <tr *ngFor="let author of authors">
+      <td>{{author.name}}</td>
+      <td><button type="button" class="btn btn-primary" [routerLink]="['/quotes', author._id]">View Quotes</button><button type="button" class="btn btn-warning" [routerLink]="['/edit', author._id]">Edit Author</button><button type="button" class="btn btn-danger" (click)="deleteAuthor(author._id)">Delete Author</button></td>
+    </tr>
+  </tbody>
+</table>

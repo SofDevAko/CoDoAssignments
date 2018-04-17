@@ -1,0 +1,9 @@
+<button class="btn btn-info btn-lg" [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span> Home</button>
+<h2>Enter a new quote for: {{author}}</h2>
+<form (submit)="createQuote()">
+        <label for="newquote">Quote: </label>
+        <input type="text" name="newquote" [(ngModel)]="newquote">
+        <input class="btn btn-info" type="submit" value="Create Quote">
+        <button class="btn btn-info" [routerLink]="['/quotes', id]">Cancel</button>
+    </form>
+    {{message}}
