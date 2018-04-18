@@ -11,7 +11,7 @@
   <tr *ngFor="let quote of quotes">
     <td>'{{quote.content}}'</td>
     <td>{{quote.likeCount}}</td>
-    <td><button type="button" class="btn btn-success">Like</button><button  type="button" class="btn btn-warning">Dislike</button><button type="button" class="btn btn-danger">Delete</button></td>
+    <td><button type="button" class="btn btn-success" (click)="like(quote._id)">Like</button><button  type="button" class="btn btn-warning" (click)="dislike(quote._id)">Dislike</button><button type="button" class="btn btn-danger" (click)="deleteQuote(quote._id)">Delete</button></td>
   </tr>
 </tbody>
 </table>

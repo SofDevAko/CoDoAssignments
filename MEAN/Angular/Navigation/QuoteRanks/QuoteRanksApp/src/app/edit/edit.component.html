@@ -1,1 +1,18 @@
 <button class="btn btn-info btn-lg" [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span> Home</button>
+<h2>Edit {{author}}:</h2>
+<form #editForm="ngForm" (submit)="editAuthor()">
+    <label for="editauthor">Author Name: </label>
+    <input type="text"
+    name="editauthor"
+    value="{{author}}"
+    required
+    minlength="3"
+    [(ngModel)]="editauthor"
+    #edit = "ngModel">
+    <input class="btn btn-info" type="submit" value="Edit Author">
+</form>
+<button class="btn btn-info" [routerLink]="['/home']">Cancel</button>
+<div *ngIf="!editForm.valid">
+    <button class="btn btn-warning" *ngIf="edit.errors.required">Please fill the input</button>
+    <button class="btn btn-warning" *ngIf="edit.errors.minlength">Author should be 3 characters or longer</button>
+</div>

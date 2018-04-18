@@ -11,6 +11,7 @@ export class QuotesComponent implements OnInit {
 quotes;
 author;
 id;
+likeCount;
   constructor(
     private _quoterService : QuoterService,
 
@@ -29,5 +30,34 @@ id;
     this.author = data['author']['name']
     console.log(this.quotes)
     })
+  }
+  like(qid){
+    let observable = this._quoterService.showQuote(qid)
+    observable.subscribe(data => {
+      this.likeCount = data['quote']['likeCount'];
+      this.likeCount +=1;
+      let observable2 = this._quoterService.updateQuote(qid,{likeCount:this.likeCount})
+      observable2.subscribe(data2 => {
+      this.author = data2['author']['name'];
+      this.quotes = data2['author']['quotes']})
+    })
+    
+  }
+  dislike(qid){
+    let observable = this._quoterService.showQuote(qid)
+    observable.subscribe(data => {
+      this.likeCount = data['quote']['likeCount']
+      this.likeCount -= 1;
+      let observable2 = this._quoterService.updateQuote(qid,{likeCount:this.likeCount})
+      observable2.subscribe(data2 => {
+      this.author = data2['author']['name'];
+      this.quotes = data2['author']['quotes']})
+    })
+    let observable2 = this._quoterService.updateQuote(qid,{likeCount:this.likeCount})
+    observable2.subscribe(data2 => {this.author = data2['author']['name'], this.quotes = data2['author']['quotes']})
+  }
+  deleteQuote(qid){
+    let observable = this._quoterService.deleteQuote(qid)
+    observable.subscribe(data => {this.author = data['author']['name'], this.quotes = data['author']['quotes']})
   }
 }

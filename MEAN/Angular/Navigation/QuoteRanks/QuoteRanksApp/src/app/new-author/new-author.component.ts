@@ -17,8 +17,10 @@ export class NewAuthorComponent implements OnInit {
   createAuthor(){
     let jsonauthor = {name: this.newauthor, quotes: []}
     let observable = this._quoterService.addAuthor(jsonauthor)
-    observable.subscribe(data => {console.log(data)})
+    observable.subscribe(data => {
+      if(data['error']){this.message = data['error']['message']}
+      else{this.message = "Author Created!"}
+      })
     this.newauthor = "";
-    this.message = "Author Created!"
   }
 }

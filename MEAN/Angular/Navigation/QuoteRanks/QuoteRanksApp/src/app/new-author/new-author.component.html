@@ -1,9 +1,17 @@
 <button class="btn btn-info btn-lg" [routerLink]="['/home']"><span class="glyphicon glyphicon-home"></span> Home</button>
 <h2>Add a new Author:</h2>
-<form (submit)="createAuthor()">
+<form #authorForm="ngForm" (submit)="createAuthor()">
     <label for="newauthor">Author Name: </label>
-    <input type="text" name="newauthor" [(ngModel)]="newauthor">
+    <input type="text"
+    name="newauthor"
+    required
+    minlength="3"
+    [(ngModel)]="newauthor"
+    #author = "ngModel">
     <input class="btn btn-info" type="submit" value="Create New Author">
-    <button class="btn btn-info" [routerLink]="['/home']">Cancel</button>
 </form>
-{{message}}
+<button class="btn btn-info" [routerLink]="['/home']">Cancel</button>
+    <div *ngIf="!authorForm.valid">
+        <button class="btn btn-warning" *ngIf="author.errors.required">Please fill the input</button>
+        <button class="btn btn-warning" *ngIf="author.errors.minlength">Author should be 3 characters or longer</button>
+    </div>

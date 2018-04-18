@@ -11,7 +11,8 @@ export class NewQuoteComponent implements OnInit {
   quotes;
   author;
   id;
-  newquote;
+  newquote ="";
+  message;
   constructor(
     private _quoterService : QuoterService,
 
@@ -32,14 +33,14 @@ export class NewQuoteComponent implements OnInit {
     })
   }
   createQuote(){
-    let observable = this._quoterService.addQuote(this.id,{_quoter: this.id, content: this.newquote})
-    
+    let observable = this._quoterService.addQuote({_author: this.id, content: this.newquote})
     observable.subscribe(data => {
-      console.log(data)
-
-      this.quotes = data['author']['quotes']
-  
-      this.author = data['author']['name']
+      if(data['error']){this.message = data['error']['message']}
+      else{
+        this.quotes = data['author']['quotes']
+        this.author = data['author']['name']
+        this.message = "Quote added!"
+      }
       })
       this.newquote = "";
   }

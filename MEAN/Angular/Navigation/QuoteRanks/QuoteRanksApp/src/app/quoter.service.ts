@@ -11,19 +11,29 @@ export class QuoterService {
   getAuthors(){
     return this._http.get('/authors');
   }
-  addAuthor(newauthor){  //CREATE
+  addAuthor(newauthor){
     return this._http.post('/authors', newauthor)
   }
-  showAuthor(id){  //READ
+  showAuthor(id){
     return this._http.get("/authors/"+id+"/quotes")
   }
-  updateAuthor(editauthor, id){  //UPDATE
+  updateAuthor(editauthor, id){
     return this._http.put("/authors/"+id+"", editauthor)
   }
-  deleteAuthor(id) {  //DESTROY
+  deleteAuthor(id) {
     return this._http.delete("/authors/"+id)
   }
-  addQuote(id,data){
-    return this._http.post("/authors/"+id+"/quotes",data)
+  addQuote(data){
+    return this._http.post("/authors/quotes",data)
   }
+  showQuote(id){
+    return this._http.get("/authors/quotes/"+id)
+  }
+  updateQuote(id, data){
+    return this._http.put("/authors/quotes/"+id,data)
+  }
+  deleteQuote(id){
+    return this._http.delete("/authors/quotes/"+id)
+  }
+
 }
